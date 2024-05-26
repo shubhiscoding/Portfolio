@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0 3rem;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure the navbar is on top */
+}
+
+.logo h1 {
+    color: black;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.menu svg {
+    font-size: 2rem;
+    scale: 2.5;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+}
+
+.menu svg:hover {
+    color: #f46439;
+}
