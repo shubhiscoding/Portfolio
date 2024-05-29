@@ -7,7 +7,6 @@ const NavBar = () => {
         document.querySelector(".menu").addEventListener("click", () => {
             // const menuPopup = document.querySelector(".Menu-popup");
             setShowMenu(true);
-            // menuPopup.classList.remove("visible");
         });
     },[]);
 

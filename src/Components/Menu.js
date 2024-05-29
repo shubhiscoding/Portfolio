@@ -2,7 +2,6 @@ import "../Styles/Menu.css"
 import { useEffect, useState } from "react";
 const Menu = () => {
 
-
     return(
         <div className="Screen">
 

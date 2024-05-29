@@ -19,7 +19,7 @@ const Intro = () => {
                     </p>
                 </div>
                 <div className="img">
-                    <img src="https://dev-portfolio-template.netlify.app/static/media/orangeTheme-girl.d0ad58be.svg" alt="about-img" />   
+                    <lottie-player src="https://lottie.host/db6661f8-68b6-4867-9d62-66c6d592e3a7/9TaMC46L5s.json" background="transparent" speed="1" style={{ width: '30vw', height: '40vh' }}  loop autoplay direction="1" mode="normal"></lottie-player>
                 </div>
             </div>
         </div>
