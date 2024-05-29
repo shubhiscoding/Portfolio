@@ -16,22 +16,22 @@ const Menu = () => {
                     </div>
                     <div className="Home-logo menu-btn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="jss116" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"></path></svg>
-                        <h2>Home</h2>
+                        <h2>About</h2>
                     </div>
                     <div className="Home-logo menu-btn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="jss116" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"></path></svg>
-                        <h2>Home</h2>
+                        <h2>Resume</h2>
                     </div><div className="Home-logo menu-btn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="jss116" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"></path></svg>
-                        <h2>Home</h2>
+                        <h2>Service</h2>
                     </div>
                     <div className="Home-logo menu-btn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="jss116" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"></path></svg>
-                        <h2>Home</h2>
+                        <h2>Blog</h2>
                     </div>
                     <div className="Home-logo menu-btn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="jss116" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"></path></svg>
-                        <h2>Home</h2>
+                        <h2>Contact</h2>
                     </div>
                 </div>
             </div>
