@@ -16,10 +16,11 @@
     background-color: #202120;
     justify-content: space-between;
     align-items: end;
-    max-width: 20vw;
+    max-width: 18vw;
     height: 100%;
-    border-top-right-radius: 1.6rem;
-    border-bottom-right-radius: 1.6rem;
+    padding: 2rem;
+    border-top-right-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
 }
 .Menu-popup.visible {
     transform: translateX(100%);
@@ -28,10 +29,20 @@
 .menu-table{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    width: 100%;
+    width: 0;
     flex-grow: 1;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 .cut{
@@ -48,18 +59,47 @@
     color: #f56539;
     border: 2px solid;
     margin: 2rem auto;
+    margin-bottom: 0;
     display: flex;
-    justify-content:space-between;
-    gap: 1rem;
-    padding: 1rem 2.5rem;
+    justify-content:space-around;
+    /* gap: 1rem; */
+    padding: 1rem 1.2rem;
+    /* padding-right: 1rem; */
     transition: background-color 0.2s, color 0.2s;
-    align-items: center;
+    /* align-items: center; */
     border-color: #f56539;
     border-radius: 45px;
-    /* width:100% */
+    width:0;
+    animation: width 2s forwards;
+    transition: background-color 0.2s, color 0.2s ease-in-out;
 }
 
+/* .menu-btn::before{
+    content: "Menu";
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+} */
+
+.menu-btn:hover{
+    background-color: #f56539;
+    color: #202120;
+    cursor: pointer;
+}
+
+@keyframes width {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
 .menu-btn svg {
-    width:100%;
+    width:fit-content;
     height:1.6rem;
+    padding: 0rem;
+    margin: 0rem;
 }
