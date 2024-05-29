@@ -21,6 +21,10 @@
     padding: 2rem;
     border-top-right-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    transform: translateX(0);
+    opacity: 1; 
+    animation: slideIn 0.8s forwards;
 }
 .Menu-popup.visible {
     transform: translateX(100%);
@@ -31,9 +35,20 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    width: 0;
+    width: 100%;
     flex-grow: 1;
-    animation: slideIn 1s forwards;
+    opacity: 1; 
+    animation: visible 0.4s forwards;
+}
+
+.menu-table.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.Menu-popup.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
 }
 
 @keyframes slideIn {

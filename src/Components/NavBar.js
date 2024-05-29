@@ -5,7 +5,9 @@ const NavBar = () => {
     const[showMenu, setShowMenu] = useState(false);
     useEffect(() => {
         document.querySelector(".menu").addEventListener("click", () => {
+            // const menuPopup = document.querySelector(".Menu-popup");
             setShowMenu(true);
+            // menuPopup.classList.remove("visible");
         });
     },[]);
 
@@ -20,8 +22,14 @@ const NavBar = () => {
         if(showMenu){
             if(document.querySelector(".cut")){
                 document.querySelector(".cut").addEventListener("click", () => {
-                    document.querySelector(".Screen").style.display = "none";
-                    setShowMenu(false);
+                    const menuTable = document.querySelector(".menu-table");
+                    const menuPopup = document.querySelector(".Menu-popup");
+                    menuTable.classList.add("hidden");
+                    menuPopup.classList.add("hidden");
+                    setTimeout(() => {
+                        document.querySelector(".Screen").style.display = "none";
+                        setShowMenu(false);
+                    }, 400);
                 });
             }
         }
