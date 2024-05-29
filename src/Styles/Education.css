@@ -11,58 +11,35 @@
 .Education h1 {
     color: #f46439;
     font-size: 4rem;
-    margin-bottom: 3rem;
 }
 
-.items {
+.Education-Item{
     display: flex;
+    gap: 0.8rem;
     flex-direction: column;
-    justify-content: start;
+    width:100%;
 }
 
-.items h4{
-    color: #f56438;
-    margin-top: 0.3rem;
-}
-
-.containerEducation{
+.educationContent{
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    gap: 1rem;
-    color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    max-width: 50%;
-    background-color: #613528;
-}
-
-.educationImg{
-    background-color: #f56438;
-    margin-top: 0.5rem;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    color: hsla(117, 56%, 49%, 0.702);
 }
 
-
-.educationImg img{
-    width: 40px;
-    height: 40px;
+.educationCoverImg img
+{
+    width: 100%;
 }
 
-.items h2 {
-    margin-top: 0.7rem;
-    margin-bottom: 0.3rem;
-    font-size: 1.5rem;
-}
-
-.items p {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #c9bebd;
+.educationCoverImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    flex-shrink: 1.35;
+    box-sizing: border-box;
 }

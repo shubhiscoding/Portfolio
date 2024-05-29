@@ -1,0 +1,38 @@
+.skills-card {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202120;
+    min-width: 10rem;
+    max-width: 10rem;
+    min-height: 10rem;
+    max-height: 10rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(244, 100, 57, 0.6);
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    transition: 300ms ease-in-out;
+}
+
+.skills-card:hover {
+    transform: scale(1.1);
+}
+
+.skills-card img {
+    width:30%;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills-card h3 {
+    color: rgb(234, 234, 234);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 10;
+}

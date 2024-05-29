@@ -1,27 +1,13 @@
-/* .containerEducation{
+.items {
     display: flex;
-    flex-direction: row;
-    align-items: start;
+    flex-direction: column;
     justify-content: start;
-    gap: 1rem;
-    color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    max-width: 50%;
-    background-color: #613528;
 }
 
-.educationImg{
-    background-color: #f56438;
-    margin-top: 0.5rem;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.items h4{
+    color: #f56438;
+    margin-top: 0.3rem;
 }
-
 
 .educationImg img{
     width: 40px;
@@ -40,7 +26,6 @@
 }
 
 
-
 .items h2 {
     margin-top: 0.7rem;
     margin-bottom: 0.3rem;
@@ -51,4 +36,39 @@
     font-size: 1rem;
     font-weight: 600;
     color: #c9bebd;
-} */
+}
+
+
+.containerEducation{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    height: 140px;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    transition: background-color 200ms ease-in-out, transform 0.3s;
+    background-color: #613528;
+    color: white;
+}
+
+.containerEducation:hover{
+    background-color: rgba(200, 100, 57, 0.8);
+    scale: 1.01;
+}
+
+
+.educationImg{
+    background-color: #f56438;
+    margin-top: 0.5rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

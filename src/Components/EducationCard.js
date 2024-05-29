@@ -1,6 +1,9 @@
-import "../Styles/Education.css";
+import "../Styles/EducationCard.css";
 
-const EducationCart = () => {
+const EducationCart = (data) => {
+  const duration = data['data']['duration'];
+  const course = data['data']['course'];
+  const school = data['data']['school'];
   return (
     <div className="containerEducation">
       <div className="educationImg">
@@ -10,9 +13,9 @@ const EducationCart = () => {
         ></img>
       </div>
       <div className="items">
-        <h4>2021-2023</h4>
-        <h2>Higher Secondary Education</h2>
-        <p>Lauerls International School, Prayagraj</p>
+        <h4>{duration}</h4>
+        <h2>{course}</h2>
+        <p>{school}</p>
       </div>
     </div>
   );
