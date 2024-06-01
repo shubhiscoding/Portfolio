@@ -4,6 +4,7 @@ import { useRef } from "react";
 
 const ProjectCard = ({ data }) => {
   const projectInfoRef = useRef(null);
+  const codeIconRef = useRef(null);
   const techStackRef = useRef(null);
   const IMG = data.Img;
   const TITLE = data.title;
@@ -15,7 +16,7 @@ const ProjectCard = ({ data }) => {
   const handleMouseEnter = () => {
     projectInfoRef.current.style.opacity = "1";
     projectInfoRef.current.style.transform = "translateX(0)";
-    document.querySelector(".buttonsCode").style.paddingRight = "0px";
+
     techStackRef.current.style.opacity = "1";
     techStackRef.current.style.display = "block";
     console.log("Mouse Enter");
@@ -23,23 +24,29 @@ const ProjectCard = ({ data }) => {
 
   const handleMouseLeave = () => {
     projectInfoRef.current.style.opacity = "0";
-    projectInfoRef.current.style.transform = "translateX(-20px)";
+    projectInfoRef.current.style.transform = "translateX(-50px)";
     techStackRef.current.style.opacity = "0";
     techStackRef.current.style.display = "none";
     console.log("Mouse Leave");
   };
 
   return (
-    <div className="project-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div
+      className="project-card"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <h1>{TITLE}</h1>
       <img src={IMG} alt="project" />
       <div className="project-info" ref={projectInfoRef}>
         <p>{DESCRIPTION}</p>
       </div>
       <div className="buttonsCode">
+        <div className="demo-button">
         <FaPlay className="play-icon" />
-        <div className="code-icon-container">
-        <FaCode className="code-icon" />
+        </div>
+        <div className="code-icon-container" ref={codeIconRef}>
+          <FaCode className="code-icon" />
         </div>
         <div className="tech-stack" ref={techStackRef}>
           <p>{TECH_STACK}</p>

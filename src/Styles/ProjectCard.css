@@ -24,8 +24,8 @@
 
 .buttonsCode {
   display: flex;
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
   padding-bottom: 20px;
   margin-bottom: 4px;
   justify-content: space-between;
@@ -71,7 +71,7 @@
 
 .project-info {
   opacity: 0;
-  transform: translateX(-20px);
+  transform: translateX(-100px);
   transition: opacity 0.3s ease, transform 1s ease;
 }
 
@@ -82,7 +82,7 @@
 
 @keyframes slideIn {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-100px);
     opacity: 0;
   }
   to {
@@ -98,7 +98,7 @@
 
 .tech-stack {
   display: none;
-  position: absolute;
+  /* position: absolute; */
   max-width: 60%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -107,24 +107,38 @@
   text-align: left;
   border-top-left-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
-  right: 0;
+  width: 0;
   color: white;
   font-size: 0.8rem;
   background-color: #212121;
   /* Initial state */
   opacity: 0;
-  transform: translateX(20px);
+  transform: translateX(70px);
   transition: opacity 0.3s ease, transform 15s ease-in-out;
   animation: slideIn-tech 1s ease;
 }
 
+.tech-stack p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @keyframes slideIn-tech {
   from {
-    transform: translateX(20%);
-    opacity: 0;
+    transform: translateX(70px);
+    width: 0;
   }
   to {
-    transform: translateX(0%);
-    opacity: 1;
+    transform: translateX(0px);
+    width: 100%;
   }
+}
+
+.code-icon-container{
+  margin-right: 20px;
+}
+
+.demo-button{
+  margin-left: 20px;
 }
