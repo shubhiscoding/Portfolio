@@ -21,7 +21,7 @@ const Experience = () => {
     ]
 
     return (
-        <div className="Experience">
+        <div className="Experience" id="Experie..">
             <div className="experience-image">
                 <img src="https://dev-portfolio-template.netlify.app/static/media/expOrange.9383b2df.svg" alt="experience" />
             </div>

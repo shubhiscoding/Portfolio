@@ -44,7 +44,7 @@ const data = [
 
 const Skills = () => {
     return (
-        <div className="skill">
+        <div className="skill" id="Skills">
             <h1>Skills</h1>
             <Marquee 
                 gradient={false} 

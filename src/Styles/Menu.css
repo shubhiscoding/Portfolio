@@ -42,21 +42,32 @@
 }
 
 .menu-table.hidden {
-    transform: translateX(-100%);
-    opacity: 0;
+    animation: slideOut 0.4s forwards;
 }
 
 .Menu-popup.hidden {
-    transform: translateX(-100%);
-    opacity: 0;
+    animation: slideOut 0.4s forwards;
 }
 
 @keyframes slideIn {
     0% {
         width: 0;
+        opacity: 0;
     }
     100% {
         width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 0;
+        opacity: 0;
     }
 }
 
@@ -85,17 +96,11 @@
     /* align-items: center; */
     border-color: #f56539;
     border-radius: 45px;
-    width:0;
-    animation: width 2s forwards;
+    width:100%;
+    opacity: 0;
+    animation: slideIn 0.4s forwards;
     transition: background-color 0.2s, color 0.2s ease-in-out;
 }
-
-/* .menu-btn::before{
-    content: "Menu";
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-left: 1rem;
-} */
 
 .menu-btn:hover{
     background-color: #f56539;

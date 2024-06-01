@@ -31,6 +31,22 @@ const NavBar = () => {
                     }, 400);
                 });
             }
+            let redirect = document.querySelectorAll(".menu-btn");
+            redirect.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const menuTable = document.querySelector(".menu-table");
+                    const page = btn.querySelector("h2").textContent;
+                    const menuPopup = document.querySelector(".Menu-popup");
+                    menuTable.classList.add("hidden");
+                    menuPopup.classList.add("hidden");
+                    setTimeout(() => {
+                        document.querySelector(".Screen").style.display = "none";
+                        setShowMenu(false);
+                    }, 400);
+                    console.log(document.getElementById(page));
+                    document.getElementById(page).scrollIntoView({ behavior: "smooth" });
+                });
+            });
         }
     },[showMenu]);
 

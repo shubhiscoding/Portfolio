@@ -4,7 +4,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import NavBar from '../Components/NavBar';
 const Home = () => {
   return (
-    <div className="Home">
+    <div className="Home" id="Home">
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
         </style>

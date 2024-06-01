@@ -2,7 +2,7 @@ import "../Styles/About.css";
 
 const Intro = () => {
     return (
-        <div className="Intro">
+        <div className="Intro" id="About">
             <div class="line-styling">
                 <div class="style-circle"></div>
                 <div class="style-circle"></div>

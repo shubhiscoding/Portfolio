@@ -1,0 +1,130 @@
+.project-card h1 {
+  font-size: 1.5rem;
+  color: #ebeaeb;
+  margin: 15px 0;
+  margin-bottom: 0;
+}
+
+.project-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 400px;
+  background-color: #ff764d;
+  border-radius: 10px;
+}
+
+.project-card img {
+  width: 80%;
+  height: auto;
+}
+
+.buttonsCode {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 4px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.code-icon {
+  border: 2px solid #ebeaeb;
+  color: #ebeaeb;
+  border-radius: 50%;
+  padding: 8px;
+  /* padding-right: 3px; */
+  width: 40px;
+  height: 40px;
+}
+.play-icon {
+  border: 2px solid #ebeaeb;
+  color: #ebeaeb;
+  border-radius: 50%;
+  padding: 8px;
+  padding-right: 2px;
+  width: 40px;
+  height: 40px;
+}
+
+.project-info {
+  width: 80%;
+  position: absolute;
+  top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  /* padding-right: 10px; */
+  border-top-right-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+  left: 0;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #212121;
+  animation: none;
+  opacity: 0;
+}
+
+.project-info {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.3s ease, transform 1s ease;
+}
+
+.project-card:hover .project-info {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.project-card:hover .tech-stack {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tech-stack {
+  display: none;
+  position: absolute;
+  max-width: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: left;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  right: 0;
+  color: white;
+  font-size: 0.8rem;
+  background-color: #212121;
+  /* Initial state */
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.3s ease, transform 15s ease-in-out;
+  animation: slideIn-tech 1s ease;
+}
+
+@keyframes slideIn-tech {
+  from {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

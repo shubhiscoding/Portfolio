@@ -2,11 +2,12 @@
   width: 100%;
   height: 100vw;
   box-sizing: border-box;
-  background-color: #202120;
+  background-color: #212121;
 }
 
 .App-header {
   display: flex;
+  background-color: #212121;
   flex-direction: column;
   /* align-items: start; */
 }
