@@ -16,7 +16,8 @@ const ProjectCard = ({ data }) => {
   const handleMouseEnter = () => {
     projectInfoRef.current.style.opacity = "1";
     projectInfoRef.current.style.transform = "translateX(0)";
-
+    codeIconRef.current.classList.add("active");
+    codeIconRef.current.classList.remove("inactive");
     techStackRef.current.style.opacity = "1";
     techStackRef.current.style.display = "block";
     console.log("Mouse Enter");
@@ -27,6 +28,9 @@ const ProjectCard = ({ data }) => {
     projectInfoRef.current.style.transform = "translateX(-50px)";
     techStackRef.current.style.opacity = "0";
     techStackRef.current.style.display = "none";
+    codeIconRef.current.classList.remove("active");
+    codeIconRef.current.classList.add("inactive");
+
     console.log("Mouse Leave");
   };
 
