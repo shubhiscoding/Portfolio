@@ -34,6 +34,11 @@ const ProjectCard = ({ data }) => {
     console.log("Mouse Leave");
   };
 
+  // const redirectToCode = (link) => {
+  //   console.log("Redirecting to code", link);
+  //   window.open(link, "_blank");
+  // }
+
   return (
     <div
       className="project-card"
@@ -47,10 +52,10 @@ const ProjectCard = ({ data }) => {
       </div>
       <div className="buttonsCode">
         <div className="demo-button">
-        <FaPlay className="play-icon" />
+        <a href={LINK_DEMO} target="_blank"><FaPlay className="play-icon"/></a>
         </div>
         <div className="code-icon-container" ref={codeIconRef}>
-          <FaCode className="code-icon" />
+          <a href={LINK_CODE} target="_blank"><FaCode className="code-icon" /></a>
         </div>
         <div className="tech-stack" ref={techStackRef}>
           <p>{TECH_STACK}</p>

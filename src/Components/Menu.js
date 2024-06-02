@@ -27,7 +27,7 @@ const Menu = () => {
                     </div>
                     <div className="Home-logo menu-btn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="jss176" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M572.694 292.093L500.27 416.248A63.997 63.997 0 0 1 444.989 448H45.025c-18.523 0-30.064-20.093-20.731-36.093l72.424-124.155A64 64 0 0 1 152 256h399.964c18.523 0 30.064 20.093 20.73 36.093zM152 224h328v-48c0-26.51-21.49-48-48-48H272l-64-64H48C21.49 64 0 85.49 0 112v278.046l69.077-118.418C86.214 242.25 117.989 224 152 224z"></path></svg>
-                        <h2>Experie..</h2>
+                        <h2>Projects</h2>
                     </div>
                     <div className="Home-logo menu-btn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="jss176" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
