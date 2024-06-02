@@ -91,7 +91,7 @@
     display: flex;
     
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: start;
     padding: 4rem;
 }
@@ -121,8 +121,9 @@
 .buttons {
     display: flex;
     flex-direction: row;
-    margin-left: 22%;
-    width: 33%;
+    width: 100%;
+    max-width: 50%;
+    margin-right: 50px;
     justify-content: space-between;
     text-align: start;
     padding: 0rem;
@@ -132,6 +133,8 @@
 
 .btn {
     background-color: #202120;
+    width: fit-content;
+    white-space: nowrap;
     color: #f46439;
     padding-left: 1.3rem;
     padding-right: 1.3rem;
@@ -145,6 +148,7 @@
     cursor: pointer;
     margin-top: 2rem;
 }
+
 
 .buttons .Contact {
     background-color: #f46439;
