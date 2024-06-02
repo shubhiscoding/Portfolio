@@ -129,17 +129,17 @@ const Contact = () => {
             <div className="socialmedia-icons">
               {socialsData.twitter && (
                 <a href={socialsData.twitter} target="_blank" rel="noreferrer">
-                  <FaTwitter aria-label="Twitter"  className="iconsDetails"/>
+                  <FaTwitter aria-label="Twitter"  className="SoicalconsDetails"/>
                 </a>
               )}
               {socialsData.github && (
                 <a href={socialsData.github} target="_blank" rel="noreferrer">
-                  <FaGithub aria-label="GitHub" className="iconsDetails" />
+                  <FaGithub aria-label="GitHub" className="SoicalconsDetails" />
                 </a>
               )}
               {socialsData.linkedIn && (
                 <a href={socialsData.linkedIn} target="_blank" rel="noreferrer">
-                  <FaLinkedinIn aria-label="LinkedIn" className="iconsDetails" />
+                  <FaLinkedinIn aria-label="LinkedIn" className="SoicalconsDetails" />
                 </a>
               )}
               {socialsData.instagram && (
@@ -148,27 +148,27 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaInstagram aria-label="Instagram"  className="iconsDetails"/>
+                  <FaInstagram aria-label="Instagram"  className="SoicalconsDetails"/>
                 </a>
               )}
               {socialsData.medium && (
                 <a href={socialsData.medium} target="_blank" rel="noreferrer">
-                  <FaMediumM aria-label="Medium"  className="iconsDetails"/>
+                  <FaMediumM aria-label="Medium"  className="SoicalconsDetails"/>
                 </a>
               )}
               {socialsData.blogger && (
                 <a href={socialsData.blogger} target="_blank" rel="noreferrer">
-                  <FaBloggerB aria-label="Blogger"  className="iconsDetails"/>
+                  <FaBloggerB aria-label="Blogger"  className="SoicalconsDetails"/>
                 </a>
               )}
               {socialsData.youtube && (
                 <a href={socialsData.youtube} target="_blank" rel="noreferrer">
-                  <FaYoutube aria-label="YouTube"  className="iconsDetails"/>
+                  <FaYoutube aria-label="YouTube"  className="SoicalconsDetails"/>
                 </a>
               )}
               {socialsData.reddit && (
                 <a href={socialsData.reddit} target="_blank" rel="noreferrer">
-                  <FaRedditAlien aria-label="Reddit" className="iconsDetails" />
+                  <FaRedditAlien aria-label="Reddit" className="SoicalconsDetails" />
                 </a>
               )}
               {socialsData.stackOverflow && (
@@ -177,17 +177,17 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaStackOverflow aria-label="Stack Overflow" className="iconsDetails" />
+                  <FaStackOverflow aria-label="Stack Overflow" className="SoicalconsDetails" />
                 </a>
               )}
               {socialsData.codepen && (
                 <a href={socialsData.codepen} target="_blank" rel="noreferrer">
-                  <FaCodepen aria-label="CodePen" className="iconsDetails" />
+                  <FaCodepen aria-label="CodePen" className="SoicalconsDetails" />
                 </a>
               )}
               {socialsData.gitlab && (
                 <a href={socialsData.gitlab} target="_blank" rel="noreferrer">
-                  <FaGitlab aria-label="GitLab" className="iconsDetails" />
+                  <FaGitlab aria-label="GitLab" className="SoicalconsDetails" />
                 </a>
               )}
             </div>

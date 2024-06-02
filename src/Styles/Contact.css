@@ -214,8 +214,30 @@ a {
     background-color: #f46439;
     width: 40px;
     height: 40px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.iconsDetails:hover {
+    background-color: white;
+    scale: 1.1;
+}
+
+.SoicalconsDetails {
+    background-color: #f46439;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.SoicalconsDetails:hover {
+    background-color: white;
+    scale: 1.1;
 }
 
 
