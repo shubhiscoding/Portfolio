@@ -6,6 +6,7 @@ import Skills from './Components/Skills';
 import Experience from './Components/Experience';
 import ProjectScetion from './Components/ProjectSection';
 import AllProjects from './Pages/AllProjects';
+import Contact from './Components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -21,6 +22,7 @@ function App() {
           <Skills />
           <Experience />
           <ProjectScetion />
+          <Contact />
         </header>}>
       </Route>
           <Route path="/projects" element={<AllProjects />} />
