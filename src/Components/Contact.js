@@ -101,23 +101,6 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-            <Snackbar
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "center",
-              }}
-              autoHideDuration={4000}
-            >
-              <SnackbarContent
-                action={
-                  <React.Fragment>
-                    <IconButton size="small" aria-label="close" color="inherit">
-                      <CloseIcon fontSize="small" />
-                    </IconButton>
-                  </React.Fragment>
-                }
-              />
-            </Snackbar>
           </div>
 
           <div className="contacts-details">
