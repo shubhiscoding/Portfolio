@@ -2,7 +2,14 @@ import "../Styles/Home.css";
 import profile from "../assets/profile.png";
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import NavBar from '../Components/NavBar';
+
+import ShubhKesharwaniResume from '../assets/ShubhKesharwaniResume.pdf';
 const Home = () => {
+
+  const SlideToContact = () => {
+    document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div className="Home" id="Home">
         <style>
@@ -26,8 +33,10 @@ const Home = () => {
                 </p>
             </div>
             <div className="buttons">
+            <a href={ShubhKesharwaniResume} download="ShubhKesharwaniResume.pdf">
                 <button className="btn">Download CV</button>
-                <button className="btn Contact">Contact</button>
+            </a>
+                <button className="btn Contact" onClick={SlideToContact}>Contact</button>
             </div>
         </div>
       </div>

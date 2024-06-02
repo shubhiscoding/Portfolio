@@ -13,6 +13,9 @@
     left: 0;
     z-index: 10; /* Ensure the navbar is on top */
 }
+.resume{
+    width: 100%;
+}
 
 .logo h1 {
     color: black;

@@ -43,8 +43,9 @@ const NavBar = () => {
                         document.querySelector(".Screen").style.display = "none";
                         setShowMenu(false);
                     }, 400);
-                    console.log(document.getElementById(page));
-                    document.getElementById(page).scrollIntoView({ behavior: "smooth" });
+                    if(document.getElementById(page)){
+                        document.getElementById(page).scrollIntoView({ behavior: "smooth" });
+                    }
                 });
             });
         }
