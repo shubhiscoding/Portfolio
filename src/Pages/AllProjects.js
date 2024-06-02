@@ -48,7 +48,7 @@ const AllProjects = () => {
       description: "Hodlers is a non custodial Crypto wallet for everyone",
       techStack: "React, Solidity, Web3",
       linkCode: "https://github.com/shubhiscoding/HODLERS",
-      linkDemo: "https://hodlers-gilt.vercel.app/",
+      linkDemo: "https://hodlers-wallet.vercel.app/",
       Img: "https://i.ibb.co/T1NGK3B/wallet.png",
     },
     {
