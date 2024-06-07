@@ -18,6 +18,7 @@ const Home = () => {
         <NavBar />
       <div className="container">
         <div className="left-red">
+          <div className="logo"><h1>Shubh</h1></div>
             <div className="social">
                 <a href="https://x.com/LookWhatIbuild" className="icons" target="_blank" rel="noreferrer"><FaTwitter /></a>
                 <a href="https://www.linkedin.com/in/shubh-kesharwani-29737427a/" className="icons" target="_blank" rel="noreferrer"><FaLinkedin /></a>

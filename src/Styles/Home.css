@@ -57,7 +57,7 @@
     flex-direction: column;
     flex-shrink: 1.8;
     align-items: start;
-    justify-content: end;
+    justify-content: space-between;
     padding: 4rem;
     background-color: #f46439;
     height: 100%;
