@@ -3,7 +3,7 @@ import profile from "../assets/profile.png";
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import NavBar from '../Components/NavBar';
 
-import ShubhKesharwaniResume from '../assets/ShubhKesharwaniResume.pdf';
+import Resume from '../assets/Resume.pdf';
 const Home = () => {
 
   const SlideToContact = () => {
@@ -34,7 +34,7 @@ const Home = () => {
                 </p>
             </div>
             <div className="buttons">
-            <a href={ShubhKesharwaniResume} download="ShubhKesharwaniResume.pdf">
+            <a href={Resume} download="Resume.pdf">
                 <button className="btn">Download CV</button>
             </a>
                 <button className="btn Contact" onClick={SlideToContact}>Contact</button>
